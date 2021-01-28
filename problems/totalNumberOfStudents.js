@@ -12,13 +12,15 @@
 */
 
 function totalNumberOfStudents(arr, ) {
+    let arr2 = ''
     let total = 0
     for( let i in arr){
+        if(arr[i] > total)
         console.log(arr[i])
-        total += arr[i]
+        total = arr[i]
         console.log(total)
     }
-    //return total
+    return total
 
 }
 totalNumberOfStudents([{subject: "A", studentCount: 10}, {subject: "B", studentCount: 100}])

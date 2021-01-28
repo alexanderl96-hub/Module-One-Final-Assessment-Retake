@@ -14,14 +14,15 @@
 function removeStringsEndingInBang(arr) {
     let str = []
     for(let i = 0; i < arr.length; i++){
-        //console.log(arr[i])
-        if(!str[i] === (arr[i])){
+        console.log(arr[i])
+        let end = arr[i][arr[i].length - 1]
+        if(end  !== "!"){
             console.log(arr[i])
-            str.push(str[i])
+            str.push(arr[i])
             console.log(str)
         }
     }
-    return str[arr[i]]
+   return str
 
 }
 removeStringsEndingInBang(["!", "", "a"])
