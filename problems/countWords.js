@@ -14,8 +14,16 @@
 * returns: {}
 */
 
-function countWords() {
+function countWords(arr) {
+    let countWords = {}
+    for(let i = 0; i < arr.length;i++){
+        let number = arr[i]
+        countWords[number] = countWords[number] ? countWords[number] + 1 : 1
+       
+    }
+    return countWords
+    console.log(countWords)
   
 }
-
+countWords(["good", "good", "great"])
 module.exports = countWords

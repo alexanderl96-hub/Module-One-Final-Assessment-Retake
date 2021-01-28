@@ -13,8 +13,19 @@
 * returns: 0
 */
 
-function countThrees() {
-
+function countThrees(n) {
+    let empty = 0
+    let count = n.toString()
+  for(let i = 0; i < count.length; i++){
+      console.log(count[i])
+      if(count[i] === '3'){
+          empty += 1
+         
+      }
+  }
+  return empty
+    //console.log(count)
+    
 }
-
+countThrees(300)
 module.exports = countThrees

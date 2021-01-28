@@ -11,8 +11,15 @@
 * returns: 167
 */
 
-function totalNumberOfStudents() {
+function totalNumberOfStudents(arr, ) {
+    let total = 0
+    for( let i in arr){
+        console.log(arr[i])
+        total += arr[i]
+        console.log(total)
+    }
+    //return total
 
 }
-
+totalNumberOfStudents([{subject: "A", studentCount: 10}, {subject: "B", studentCount: 100}])
 module.exports = totalNumberOfStudents

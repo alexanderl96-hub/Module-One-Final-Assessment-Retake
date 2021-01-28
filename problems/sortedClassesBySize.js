@@ -11,7 +11,8 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
+function sortClassesBySize(arr) {
+   return arr.sort((a, b,)=> a.studentCount < b.studentCount ? -1:1).map(el =>el.subject)
 
 }
 
