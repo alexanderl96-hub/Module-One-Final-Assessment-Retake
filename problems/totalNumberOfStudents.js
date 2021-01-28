@@ -12,14 +12,8 @@
 */
 
 function totalNumberOfStudents(arr, ) {
-    let arr2 = ''
     let total = 0
-    for( let i in arr){
-        if(arr[i] > total)
-        console.log(arr[i])
-        total = arr[i]
-        console.log(total)
-    }
+    arr.map((el)=> total + el.studentCount )
     return total
 
 }
